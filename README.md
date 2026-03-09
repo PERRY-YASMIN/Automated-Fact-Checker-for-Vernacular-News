@@ -18,48 +18,7 @@ isProject: false
 
 ## 1. High-level system architecture & pipeline stages
 
-```mermaid
-flowchart LR
-  subgraph ingestLayer [Ingestion Layer]
-    socialAPIs[SocialFeedIngestor]
-    rssIngest[NewsRSSIngestor]
-    webScraper[WebScraper]
-    queueIn[kafka_topic_raw_posts]
-  end
 
-  subgraph preprocessingLayer [Preprocessing & Normalization]
-    langDetect[LangDetector]
-    normalizeText[Normalizer & Cleaner]
-    fluffFilter[FluffIrrelevantFilter]
-    claimExtractor[ClaimExtractor]
-    queueClaims[kafka_topic_claims]
-  end
-
-  subgraph factCheckLayer [Fact Retrieval & Verification]
-    retriever[HybridRetriever]
-    factDB[(FactDB + VectorStore)]
-    verifier[ClaimVerifier]
-    scorer[ConfidenceScorer]
-    queueResults[kafka_topic_results]
-  end
-
-  subgraph apiLayer [API & UI]
-    backendAPI[BackendAPI(FastAPI)]
-    reviewerUI[ReviewerDashboard]
-  end
-
-  socialAPIs --> queueIn
-  rssIngest --> queueIn
-  webScraper --> queueIn
-
-  queueIn --> langDetect --> normalizeText --> fluffFilter --> claimExtractor --> queueClaims
-  queueClaims --> retriever
-  retriever --> factDB
-  factDB --> retriever
-  retriever --> verifier --> scorer --> queueResults
-
-  queueResults --> backendAPI --> reviewerUI
-```
 
 
 
