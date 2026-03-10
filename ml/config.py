@@ -1,4 +1,5 @@
 from pathlib import Path
+import torch
 
 # Root paths
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -11,6 +12,15 @@ VERIFIED_FACTS_PATH = DATA_DIR / "verified_facts.jsonl"
 # Models
 EMBEDDING_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
 
+# Verifier (Milestone 2): multilingual NLI for claim vs fact
+# Premise = retrieved fact text, Hypothesis = extracted claim text
+VERIFIER_MODEL_NAME = "joeddav/xlm-roberta-large-xnli"
+VERIFIER_BATCH_SIZE = 8
+
 # Retrieval
 TOP_K_FACTS = 5
 MIN_SIMILARITY = 0.4  # threshold for \"reasonable\" match
+
+
+def get_device() -> str:
+    return "cuda" if torch.cuda.is_available() else "cpu"

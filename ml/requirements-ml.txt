@@ -4,6 +4,9 @@ scikit-learn>=1.5
 torch
 transformers>=5.3.0
 sentence-transformers>=5.2.3
+huggingface-hub>=0.26.0
+sentencepiece>=0.2.0
+protobuf>=5.0.0
 py3langid>=0.3.0
 indic-nlp-library==0.92
 regex>=2023.10.3
