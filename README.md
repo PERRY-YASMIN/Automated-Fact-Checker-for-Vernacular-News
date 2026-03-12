@@ -18,6 +18,7 @@ isProject: false
 
 ## 1. High-level system architecture & pipeline stages
 
+<<<<<<< HEAD
 ```mermaid
 flowchart LR
   subgraph ingestLayer [Ingestion Layer]
@@ -60,6 +61,9 @@ flowchart LR
 
   queueResults --> backendAPI --> reviewerUI
 ```
+=======
+
+>>>>>>> origin/ml-dev
 
 
 
