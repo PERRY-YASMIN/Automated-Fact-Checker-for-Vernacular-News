@@ -1,6 +1,7 @@
 numpy>=1.26
 pandas>=2.2
 scikit-learn>=1.5
+joblib>=1.4
 torch
 transformers>=5.3.0
 sentence-transformers>=5.2.3

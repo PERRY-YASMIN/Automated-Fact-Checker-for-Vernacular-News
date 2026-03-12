@@ -41,11 +41,14 @@ def basic_normalize(text: str) -> str:
 
 
 def remove_fluff(text: str) -> str:
-    lowered = text.lower()
+    # Match fluff patterns case-insensitively while preserving original casing
+    # of the remaining text, so downstream NLI models are not confused by
+    # unexpected all-lowercase input.
+    out = text
     for pat in FLUFF_PATTERNS:
-        lowered = re.sub(pat, " ", lowered)
-    lowered = WHITESPACE_RE.sub(" ", lowered)
-    return lowered.strip()
+        out = re.sub(pat, " ", out, flags=re.IGNORECASE)
+    out = WHITESPACE_RE.sub(" ", out)
+    return out.strip()
 
 
 def normalize_for_embedding(text: str) -> str:

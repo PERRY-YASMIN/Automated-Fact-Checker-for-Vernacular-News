@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from functools import lru_cache
+from pathlib import Path
 from typing import Iterable, List, Optional
 
 import torch
@@ -23,8 +24,15 @@ class VerificationResult:
 @lru_cache(maxsize=1)
 def _load_nli():
     device = config.get_device()
-    tokenizer = AutoTokenizer.from_pretrained(config.VERIFIER_MODEL_NAME)
-    model = AutoModelForSequenceClassification.from_pretrained(config.VERIFIER_MODEL_NAME)
+
+    model_source: str | Path
+    if config.VERIFIER_MODEL_DIR.exists():
+        model_source = config.VERIFIER_MODEL_DIR
+    else:
+        model_source = config.VERIFIER_MODEL_NAME
+
+    tokenizer = AutoTokenizer.from_pretrained(model_source)
+    model = AutoModelForSequenceClassification.from_pretrained(model_source)
     if device == "cuda":
         model = model.to(torch.device("cuda"))
         model = model.half()
@@ -72,6 +80,27 @@ def _coerce_retrieved(facts: list) -> List[RetrievedFact]:
     return coerced
 
 
+def _label_from_probs(
+    entailment: float,
+    contradiction: float,
+    neutral: float,
+    retrieval_score: float,
+) -> tuple[str, float]:
+    # Strong NLI + sufficient retrieval support.
+    if entailment >= config.NLI_DECISION_THRESHOLD and retrieval_score >= config.RETRIEVAL_SUPPORT_THRESHOLD:
+        return "Supported", entailment
+    if contradiction >= config.NLI_DECISION_THRESHOLD and retrieval_score >= config.RETRIEVAL_SUPPORT_THRESHOLD:
+        return "Refuted", contradiction
+
+    # Weak-but-consistent signal with very strong retrieval.
+    if entailment >= config.NLI_WEAK_SIGNAL_THRESHOLD and retrieval_score >= config.RETRIEVAL_STRONG_THRESHOLD:
+        return "Supported", entailment
+    if contradiction >= config.NLI_WEAK_SIGNAL_THRESHOLD and retrieval_score >= config.RETRIEVAL_STRONG_THRESHOLD:
+        return "Refuted", contradiction
+
+    return "NotEnoughEvidence", neutral
+
+
 @torch.inference_mode()
 def verify_claim_against_retrieved_facts(claim_text: str, retrieved: List[RetrievedFact]) -> VerificationResult:
     if not retrieved:
@@ -90,7 +119,11 @@ def verify_claim_against_retrieved_facts(claim_text: str, retrieved: List[Retrie
     premises = [t[0] for t in triples]
     hypotheses = [t[1] for t in triples]
 
-    enc = tokenizer(premises, hypotheses, truncation=True, padding=True, return_tensors="pt")
+    enc = tokenizer(
+        [p.lower() for p in premises],
+        [h.lower() for h in hypotheses],
+        truncation=True, padding=True, return_tensors="pt"
+    )
     if device == "cuda":
         enc = {k: v.to(torch.device("cuda")) for k, v in enc.items()}
 
@@ -109,18 +142,9 @@ def verify_claim_against_retrieved_facts(claim_text: str, retrieved: List[Retrie
         con = p_map.get("contradiction", 0.0)
         neu = p_map.get("neutral", 0.0)
 
-        if ent >= con and ent >= neu:
-            label = "Supported"
-            conf = ent
-            strength = ent
-        elif con >= ent and con >= neu:
-            label = "Refuted"
-            conf = con
-            strength = con
-        else:
-            label = "NotEnoughEvidence"
-            conf = neu
-            strength = neu
+        retrieval_score = float(triples[i][2].score)
+        label, conf = _label_from_probs(ent, con, neu, retrieval_score)
+        strength = conf
 
         if strength > best_strength:
             best_strength = strength

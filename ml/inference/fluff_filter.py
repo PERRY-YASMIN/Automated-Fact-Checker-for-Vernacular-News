@@ -36,11 +36,14 @@ def _basic_normalize(text: str) -> str:
 
 
 def _remove_fluff(text: str) -> str:
-    lowered = text.lower()
+    # Apply each pattern case-insensitively while preserving the original
+    # casing of non-fluff text.  Lowercasing the whole string would corrupt
+    # the hypothesis fed to case-sensitive NLI models (e.g. xlm-roberta).
+    out = text
     for pat in FLUFF_PATTERNS:
-        lowered = re.sub(pat, " ", lowered)
-    lowered = WHITESPACE_RE.sub(" ", lowered)
-    return lowered.strip()
+        out = re.sub(pat, " ", out, flags=re.IGNORECASE)
+    out = WHITESPACE_RE.sub(" ", out)
+    return out.strip()
 
 
 def clean_text(text: str) -> str:

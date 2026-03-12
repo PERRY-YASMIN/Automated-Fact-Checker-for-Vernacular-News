@@ -1,27 +1,36 @@
 import React from "react";
 
 interface ClaimCardProps {
-  text: string;
+  claim: string;
   verdict?: string;
   confidence?: number;
-  language?: string;
+  sources?: string[];
   onApprove?: () => void;
   onReject?: () => void;
 }
 
 const ClaimCard: React.FC<ClaimCardProps> = ({
-  text, verdict, confidence, language, onApprove, onReject
+  claim, verdict, confidence, sources, onApprove, onReject
 }) => {
   return (
     <div className="claim-card">
-      <p>{text}</p>
+      <p>{claim}</p>
       {verdict && (
         <div className="verdict">
           <span><b>Verdict:</b> {verdict}</span>
-          <span>Confidence: {confidence}%</span>
+          <span>Confidence: {((confidence ?? 0) * 100).toFixed(2)}%</span>
         </div>
       )}
-      {language && <span className="language">Lang: {language}</span>}
+      {sources && sources.length > 0 && (
+        <div style={{ marginTop: "8px" }}>
+          <b>Sources:</b>
+          <ul style={{ marginTop: "4px", marginBottom: 0 }}>
+            {sources.map((source, index) => (
+              <li key={index}>{source}</li>
+            ))}
+          </ul>
+        </div>
+      )}
       {(onApprove || onReject) && (
         <div className="buttons">
           {onApprove && <button className="approve" onClick={onApprove}>Approve</button>}

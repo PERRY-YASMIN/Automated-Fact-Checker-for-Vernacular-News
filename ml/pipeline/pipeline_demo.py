@@ -1,40 +1,33 @@
 from __future__ import annotations
 
-import json
-from pathlib import Path
-from typing import List
-
-from ml import config
-from ml.inference.pipeline import fact_check_text
+from ml.inference.retrieval_pipeline import rebuild_fact_index
+from ml.pipeline import verify_claim
 
 
-def load_sample_posts(path: Path | None = None) -> List[dict]:
-    if path is None:
-        path = config.SAMPLE_POSTS_PATH
-    posts = []
-    for line in path.read_text(encoding="utf-8").splitlines():
-        posts.append(json.loads(line))
-    return posts
+def run_demo() -> None:
+    # Rebuild retrieval index to reflect any newly added facts.
+    rebuild_fact_index()
 
-
-def process_post(post: dict) -> None:
-    post_id = post["id"]
-    text = post["text"]
-    result = fact_check_text(text)
+    demo_claims = [
+        "The Earth is the third planet from the Sun.",
+        "पृथ्वी सूर्य से तीसरे नंबर का ग्रह है।",
+        "500 और 1000 के नोट वापस शुरू कर दिए गए हैं।",
+    ]
 
     print("=" * 80)
-    print(f"Post {post_id}")
-    print(f"Original text: {text}")
-    print(f"Extracted {len(result['claims'])} potential claim(s):")
-    for entry in result["claims"]:
-        print(f"  - {entry['claim']}")
-        print(f"    -> Verdict: {entry['verdict']} (conf={entry['confidence']:.3f})")
-        if not entry["evidence"]:
-            print("    -> No matching facts above similarity threshold.")
-            continue
-        print("    -> Top matching facts:")
-        for evidence in entry["evidence"]:
-            print(f"       * {evidence['id']} ({evidence['score']:.3f}): {evidence['claim']}")
+    print("Vernacular Fact-Checker Pipeline Demo")
+    print("=" * 80)
+    for claim in demo_claims:
+        result = verify_claim(claim)
+        print(f"Claim: {claim}")
+        print(f"Verdict: {result['verdict']} | Confidence: {result['confidence']:.3f}")
+        if result["sources"]:
+            print("Sources:")
+            for src in result["sources"][:3]:
+                print(f"  - {src}")
+        else:
+            print("Sources: []")
+        print("-" * 80)
 
 
 def main() -> None:
@@ -47,9 +40,7 @@ def main() -> None:
     except Exception:
         pass
 
-    posts = load_sample_posts()
-    for post in posts:
-        process_post(post)
+    run_demo()
 
 
 if __name__ == "__main__":

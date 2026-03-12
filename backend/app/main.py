@@ -1,3 +1,11 @@
+import sys
+from pathlib import Path
+
+# Ensure project root is importable so backend can access ml package.
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 import app.api.routes_verification as routes_verification
 from app.models.verdict import Verdict
 

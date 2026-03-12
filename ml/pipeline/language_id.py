@@ -57,9 +57,15 @@ def detect_script(text: str) -> Optional[str]:
 
 
 def detect_language(text: str) -> LanguageInfo:
-    # Using the direct classify function from py3langid
+    # Using the direct classify function from py3langid with script-aware override.
     lang, score = py3langid.classify(text)
     script = detect_script(text)
+
+    # Devanagari text is predominantly Hindi in this project scope.
+    if script == "Devanagari" and (lang != "hi" or score < 0.75):
+        lang = "hi"
+        score = max(score, 0.85)
+
     return LanguageInfo(lang=lang, score=score, script=script)
 
 

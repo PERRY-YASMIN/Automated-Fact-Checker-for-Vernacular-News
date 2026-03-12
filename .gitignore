@@ -46,3 +46,22 @@ Thumbs.db
 node_modules
 .env
 dist
+# ML embeddings cache
+ml/cache/
+ml/**/*.cache
+**/embeddings_cache/
+
+# Temp/log files
+*.log
+*.tmp
+*.swp
+*.swo
+~*
+
+# Database
+*.db
+*.sqlite
+app.db
+
+# Node modules
+frontend/**/node_modules/
