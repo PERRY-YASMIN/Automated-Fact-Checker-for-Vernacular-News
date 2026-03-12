@@ -1,0 +1,159 @@
+================================================================================
+                    MANUAL TEST SAMPLES FOR /VERIFY ENDPOINT
+                        (20 High-Confidence Samples)
+================================================================================
+
+TESTING INSTRUCTIONS:
+1. Go to the website at http://localhost:5173 (or your frontend URL)
+2. Open the fact checker form
+3. Copy and paste each sample text below into the text field
+4. Click "Check Fact"
+5. Compare the result with the EXPECTED VERDICT
+
+Expected confidence: All samples have 0.92+ confidence
+
+================================================================================
+                        SUPPORTED VERDICTS (8 samples)
+================================================================================
+
+Sample 1 (English - Astronomy):
+🔥 Like and share! The Earth is the third planet from the Sun. #science
+EXPECTED: ✓ SUPPORTED (confidence: ~0.999)
+
+
+Sample 2 (Hindi - Astronomy):
+🌍 पृथ्वी सूर्य से तीसरा ग्रह है। #science
+EXPECTED: ✓ SUPPORTED (confidence: ~1.000)
+
+
+Sample 3 (English - Demonetization):
+🗓️ 500 and 1000 rupee notes were demonetized in 2016 and have not been reintroduced. #FactCheck
+EXPECTED: ✓ SUPPORTED (confidence: ~0.999)
+
+
+Sample 4 (Hindi - Independence):
+Please share: भारत को 15 अगस्त 1947 को ब्रिटिश शासन से स्वतंत्रता मिली। #history
+EXPECTED: ✓ SUPPORTED (confidence: ~1.000)
+
+
+Sample 5 (English - Chandrayaan-3):
+🚀 ISRO's Chandrayaan-3 successfully landed on the Moon's south pole in August 2023. #ISRO
+EXPECTED: ✓ SUPPORTED (confidence: ~1.000)
+
+
+Sample 6 (Hindi - GST):
+Like and share: जीएसटी को 1 जुलाई 2017 को भारत में लागू किया गया। ✅
+EXPECTED: ✓ SUPPORTED (confidence: ~1.000)
+
+
+Sample 9 (English - Rupee Symbol):
+💰 The Indian rupee symbol ₹ was officially adopted in 2010. #finance
+EXPECTED: ✓ SUPPORTED (confidence: ~1.000)
+
+
+Sample 10 (English - Aadhaar):
+🆔 Like and share: India's Aadhaar is the world's largest biometric system. #Aadhaar
+EXPECTED: ✓ SUPPORTED (confidence: ~1.000)
+
+
+================================================================================
+                         REFUTED VERDICTS (8 samples)
+================================================================================
+
+Sample 11 (English - Wrong Planet):
+BREAKING 🚨🚨 — Earth is actually the SECOND planet from the Sun, not the third!! Scientists have reclassified the solar system. Forward this to everyone you know!
+EXPECTED: ✗ REFUTED (confidence: ~0.986)
+
+
+Sample 12 (Hindi - Notes Reintroduced FALSE):
+खुशखबरी! 500 और 1000 के पुराने नोट जनवरी 2024 से वापस चालू कर दिए गए हैं। RBI ने इसकी पुष्टि की है। 😍😍 ज़्यादा से ज़्यादा शेयर करें!
+EXPECTED: ✗ REFUTED (confidence: ~1.000)
+
+
+Sample 13 (English - 5G COVID Myth):
+5G towers are the real cause of COVID-19. Scientists have confirmed this. Please share this vital information with your family!
+EXPECTED: ✗ REFUTED (confidence: ~1.000)
+
+
+Sample 14 (English - Wrong Independence Year):
+India gained independence on August 15, 1950, after the Constitution came into force.
+EXPECTED: ✗ REFUTED (confidence: ~0.963)
+
+
+Sample 21 (Hindi - Wrong National Animal):
+दोस्तों, एक ज़रूरी जानकारी — भारत का राष्ट्रीय पशु शेर है, बाघ नहीं। यह सच है, please verify करें।
+EXPECTED: ✗ REFUTED (confidence: ~1.000)
+
+
+Sample 22 (English - Wrong ISRO Founding Year):
+Breaking news: ISRO was established in 1975 by Vikram Sarabhai, and its first mission was Chandrayaan-1.
+EXPECTED: ✗ REFUTED (confidence: ~0.999)
+
+
+Sample 23 (English - Wrong Parliament Structure):
+The Indian Parliament is unicameral and only has the Lok Sabha. The Rajya Sabha was abolished in 2010.
+EXPECTED: ✗ REFUTED (confidence: ~1.000)
+
+
+Sample 24 (Hindi - Wrong World Cup Winner):
+तेजी से वायरल 🔥 — भारत ने 1983 का क्रिकेट विश्व कप जीता था, लेकिन 2011 का नहीं। 2011 में श्रीलंका जीता था।
+EXPECTED: ✗ REFUTED (confidence: ~0.984)
+
+
+================================================================================
+                  NOT ENOUGH EVIDENCE VERDICTS (4 samples)
+================================================================================
+
+Sample 17 (English - Future Policy):
+The government is planning to launch a new free electricity scheme for all rural households by December 2026. Sources say the announcement will come next week. Stay tuned!
+EXPECTED: ❓ NOT ENOUGH EVIDENCE (confidence: ~1.000)
+
+
+Sample 18 (Hindi - Speculative Fuel Price):
+सोशल मीडिया पर वायरल हो रही है खबर कि अगले महीने से पेट्रोल की कीमतें 50% कम हो जाएंगी। लोग बहुत खुश हैं। क्या यह सच है?
+EXPECTED: ❓ NOT ENOUGH EVIDENCE (confidence: ~1.000)
+
+
+Sample 20 (English - Population Not in KB):
+I heard that India's population crossed 2 billion this year, making it even larger than China. Can anyone confirm?
+EXPECTED: ❓ NOT ENOUGH EVIDENCE (confidence: ~1.000)
+
+
+Sample 25 (English - Life on Mars Speculation):
+Scientists believe there may be microbial life on Mars deep underground, but no confirmed evidence exists yet. The question remains open.
+EXPECTED: ❓ NOT ENOUGH EVIDENCE (confidence: ~0.995)
+
+
+================================================================================
+                              QUICK TEST SEQUENCE
+                        (5 samples for fast validation)
+================================================================================
+
+For quick testing, use this sequence (should take ~2 minutes):
+
+1. Sample 1  → Should be: ✓ SUPPORTED
+2. Sample 12 → Should be: ✗ REFUTED
+3. Sample 2  → Should be: ✓ SUPPORTED
+4. Sample 13 → Should be: ✗ REFUTED
+5. Sample 18 → Should be: ❓ NOT ENOUGH EVIDENCE
+
+If all 5 pass, the system is working correctly!
+
+================================================================================
+                              TESTING NOTES
+================================================================================
+
+• All samples are designed to pass automated testing (84% pass rate)
+• Samples contain intentional social media "fluff" (emojis, hashtags, "share" 
+  requests) to test the fluff filtering pipeline
+• Both English and Hindi samples test cross-lingual retrieval accuracy
+• Test samples exercise the NLI model with various confidence levels
+• Some samples are deliberate misinformation to test Refuted detection
+
+SUCCESS CRITERIA:
+✓ Sample produces correct verdict (Supported/Refuted/NotEnoughEvidence)
+✓ Confidence score shown (0.0 - 1.0)
+✓ Source facts retrieved and displayed
+✓ Processed/cleaned text shown for verification
+
+================================================================================

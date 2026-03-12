@@ -1,5 +1,392 @@
-{"id": "fact1", "claim": "As of March 2025, petrol price in Delhi is around 95 rupees per litre.", "language": "en"}
-{"id": "fact2", "claim": "Government has reduced LPG cylinder prices by 200 rupees for certain beneficiaries only, not all households.", "language": "en"}
-{"id": "fact3", "claim": "500 and 1000 rupee notes were demonetized in 2016 and have not been reintroduced.", "language": "en"}
-{"id": "fact4", "claim": "मार्च 2025 में दिल्ली में पेट्रोल की कीमत लगभग 95 रुपये प्रति लीटर थी।", "language": "hi"}
-{"id": "fact5", "claim": "500 और 1000 के नोटों को 2016 में बंद किया गया था और उन्हें फिर से शुरू नहीं किया गया है।", "language": "hi"}
+{"id": "fact1", "claim": "As of March 2025, petrol price in Delhi is around 95 rupees per litre.", "language": "en", "topic_id": "petrol_delhi_2025"}
+{"id": "fact2", "claim": "Government has reduced LPG cylinder prices by 200 rupees for certain beneficiaries only, not all households.", "language": "en", "topic_id": "lpg_price"}
+{"id": "fact3", "claim": "500 and 1000 rupee notes were demonetized in 2016 and have not been reintroduced.", "language": "en", "topic_id": "demonetization"}
+{"id": "fact4", "claim": "मार्च 2025 में दिल्ली में पेट्रोल की कीमत लगभग 95 रुपये प्रति लीटर थी।", "language": "hi", "topic_id": "petrol_delhi_2025"}
+{"id": "fact5", "claim": "500 और 1000 के नोटों को 2016 में बंद किया गया था और उन्हें फिर से शुरू नहीं किया गया है।", "language": "hi", "topic_id": "demonetization"}
+{"id": "fact6", "claim": "The Earth is the third planet from the Sun.", "language": "en", "topic_id": "earth_planet"}
+{"id": "fact7", "claim": "पृथ्वी सूर्य से तीसरा ग्रह है।", "language": "hi", "topic_id": "earth_planet"}
+{"id": "fact8", "claim": "The Moon is Earth's natural satellite and is not made of cheese.", "language": "en", "topic_id": "moon_satellite"}
+{"id": "fact9", "claim": "India gained independence from British rule on August 15, 1947.", "language": "en", "topic_id": "india_independence"}
+{"id": "fact10", "claim": "भारत को 15 अगस्त 1947 को ब्रिटिश शासन से स्वतंत्रता मिली।", "language": "hi", "topic_id": "india_independence"}
+{"id": "fact11", "claim": "The Constitution of India came into effect on January 26, 1950.", "language": "en", "topic_id": "india_constitution"}
+{"id": "fact12", "claim": "भारत का संविधान 26 जनवरी 1950 को लागू हुआ।", "language": "hi", "topic_id": "india_constitution"}
+{"id": "fact13", "claim": "Jawaharlal Nehru was the first Prime Minister of India.", "language": "en", "topic_id": "first_pm_india"}
+{"id": "fact14", "claim": "जवाहरलाल नेहरू भारत के पहले प्रधानमंत्री थे।", "language": "hi", "topic_id": "first_pm_india"}
+{"id": "fact15", "claim": "Mahatma Gandhi led India's non-violent independence movement against British rule.", "language": "en", "topic_id": "gandhi_independence"}
+{"id": "fact16", "claim": "महात्मा गांधी ने ब्रिटिश शासन के खिलाफ भारत के अहिंसक स्वतंत्रता आंदोलन का नेतृत्व किया।", "language": "hi", "topic_id": "gandhi_independence"}
+{"id": "fact17", "claim": "B.R. Ambedkar was the chairman of the drafting committee of the Indian Constitution.", "language": "en", "topic_id": "ambedkar_constitution"}
+{"id": "fact18", "claim": "बी.आर. अंबेडकर भारतीय संविधान की मसौदा समिति के अध्यक्ष थे।", "language": "hi", "topic_id": "ambedkar_constitution"}
+{"id": "fact19", "claim": "India is the world's largest democracy by population.", "language": "en", "topic_id": "india_largest_democracy"}
+{"id": "fact20", "claim": "भारत जनसंख्या के हिसाब से विश्व का सबसे बड़ा लोकतंत्र है।", "language": "hi", "topic_id": "india_largest_democracy"}
+{"id": "fact21", "claim": "New Delhi is the capital of India.", "language": "en", "topic_id": "india_capital"}
+{"id": "fact22", "claim": "नई दिल्ली भारत की राजधानी है।", "language": "hi", "topic_id": "india_capital"}
+{"id": "fact23", "claim": "The Ganges river is sacred in Hinduism and flows through northern India.", "language": "en", "topic_id": "ganga_river"}
+{"id": "fact24", "claim": "गंगा नदी हिंदू धर्म में पवित्र मानी जाती है और उत्तर भारत से होकर बहती है।", "language": "hi", "topic_id": "ganga_river"}
+{"id": "fact25", "claim": "The Himalayas are the world's highest mountain range, located in Asia.", "language": "en", "topic_id": "himalayas"}
+{"id": "fact26", "claim": "हिमालय एशिया में स्थित विश्व की सबसे ऊँची पर्वत श्रृंखला है।", "language": "hi", "topic_id": "himalayas"}
+{"id": "fact27", "claim": "India has 28 states and 8 Union Territories.", "language": "en", "topic_id": "india_states_uts"}
+{"id": "fact28", "claim": "भारत में 28 राज्य और 8 केंद्र शासित प्रदेश हैं।", "language": "hi", "topic_id": "india_states_uts"}
+{"id": "fact29", "claim": "Mumbai is India's financial capital and one of its most populous cities.", "language": "en", "topic_id": "mumbai_financial"}
+{"id": "fact30", "claim": "मुंबई भारत की वित्तीय राजधानी और सबसे अधिक आबादी वाले शहरों में से एक है।", "language": "hi", "topic_id": "mumbai_financial"}
+{"id": "fact31", "claim": "GST (Goods and Services Tax) was introduced in India on July 1, 2017.", "language": "en", "topic_id": "gst_india"}
+{"id": "fact32", "claim": "जीएसटी (वस्तु एवं सेवा कर) को भारत में 1 जुलाई 2017 को लागू किया गया।", "language": "hi", "topic_id": "gst_india"}
+{"id": "fact33", "claim": "The Reserve Bank of India (RBI) is the central bank that controls monetary policy in India.", "language": "en", "topic_id": "rbi_monetary_policy"}
+{"id": "fact34", "claim": "भारतीय रिजर्व बैंक (आरबीआई) भारत में मौद्रिक नीति को नियंत्रित करने वाला केंद्रीय बैंक है।", "language": "hi", "topic_id": "rbi_monetary_policy"}
+{"id": "fact35", "claim": "UPI (Unified Payments Interface) was launched by NPCI in India in 2016.", "language": "en", "topic_id": "upi_launch"}
+{"id": "fact36", "claim": "यूपीआई (यूनिफाइड पेमेंट्स इंटरफेस) को 2016 में एनपीसीआई द्वारा भारत में लॉन्च किया गया था।", "language": "hi", "topic_id": "upi_launch"}
+{"id": "fact37", "claim": "ISRO's Chandrayaan-3 successfully landed on the Moon's south pole in August 2023.", "language": "en", "topic_id": "chandrayaan3"}
+{"id": "fact38", "claim": "इसरो के चंद्रयान-3 ने अगस्त 2023 में चंद्रमा के दक्षिणी ध्रुव पर सफलतापूर्वक लैंडिंग की।", "language": "hi", "topic_id": "chandrayaan3"}
+{"id": "fact39", "claim": "ISRO's Mangalyaan (Mars Orbiter Mission) successfully entered Mars orbit in September 2014.", "language": "en", "topic_id": "mangalyaan_mars"}
+{"id": "fact40", "claim": "इसरो का मंगलयान (मार्स ऑर्बिटर मिशन) सितंबर 2014 में सफलतापूर्वक मंगल की कक्षा में प्रवेश कर गया।", "language": "hi", "topic_id": "mangalyaan_mars"}
+{"id": "fact41", "claim": "India's first satellite, Aryabhata, was launched in 1975.", "language": "en", "topic_id": "aryabhata_satellite"}
+{"id": "fact42", "claim": "भारत का पहला उपग्रह 'आर्यभट्ट' 1975 में लॉन्च किया गया था।", "language": "hi", "topic_id": "aryabhata_satellite"}
+{"id": "fact43", "claim": "Water boils at 100 degrees Celsius at sea level under standard atmospheric pressure.", "language": "en", "topic_id": "water_boiling_point"}
+{"id": "fact44", "claim": "समुद्र तल पर मानक वायुमंडलीय दबाव में पानी 100 डिग्री सेल्सियस पर उबलता है।", "language": "hi", "topic_id": "water_boiling_point"}
+{"id": "fact45", "claim": "India was declared polio-free by the WHO in March 2014.", "language": "en", "topic_id": "india_polio_free"}
+{"id": "fact46", "claim": "मार्च 2014 में विश्व स्वास्थ्य संगठन ने भारत को पोलियो मुक्त घोषित किया।", "language": "hi", "topic_id": "india_polio_free"}
+{"id": "fact47", "claim": "COVID-19 vaccines were approved and began being administered globally in late 2020.", "language": "en", "topic_id": "covid_vaccines_2020"}
+{"id": "fact48", "claim": "कोविड-19 टीकों को मंजूरी मिली और 2020 के अंत में इन्हें दुनिया भर में दिया जाना शुरू हुआ।", "language": "hi", "topic_id": "covid_vaccines_2020"}
+{"id": "fact49", "claim": "5G technology does not cause COVID-19; there is no scientific evidence for this claim.", "language": "en", "topic_id": "5g_covid_myth"}
+{"id": "fact50", "claim": "5जी तकनीक कोविड-19 का कारण नहीं बनती; इस दावे का कोई वैज्ञानिक प्रमाण नहीं है।", "language": "hi", "topic_id": "5g_covid_myth"}
+{"id": "fact51", "claim": "COVID-19 vaccines do not contain microchips; this claim has been scientifically debunked.", "language": "en", "topic_id": "vaccine_microchip_myth"}
+{"id": "fact52", "claim": "कोविड-19 टीकों में माइक्रोचिप नहीं होते; वैज्ञानिकों ने इस दावे को खारिज किया है।", "language": "hi", "topic_id": "vaccine_microchip_myth"}
+{"id": "fact53", "claim": "The Taj Mahal in Agra was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal.", "language": "en", "topic_id": "taj_mahal"}
+{"id": "fact54", "claim": "आगरा का ताज महल मुगल सम्राट शाहजहाँ ने अपनी पत्नी मुमताज महल की याद में बनवाया था।", "language": "hi", "topic_id": "taj_mahal"}
+{"id": "fact55", "claim": "Yoga originated in ancient India and is now practiced worldwide.", "language": "en", "topic_id": "yoga_origin"}
+{"id": "fact56", "claim": "योग की उत्पत्ति प्राचीन भारत में हुई और अब इसे दुनिया भर में किया जाता है।", "language": "hi", "topic_id": "yoga_origin"}
+{"id": "fact57", "claim": "India won the Cricket World Cup in 1983 and again in 2011.", "language": "en", "topic_id": "india_cricket_worldcup"}
+{"id": "fact58", "claim": "भारत ने क्रिकेट विश्व कप 1983 में और फिर 2011 में जीता।", "language": "hi", "topic_id": "india_cricket_worldcup"}
+{"id": "fact59", "claim": "India has a bicameral Parliament consisting of the Lok Sabha and Rajya Sabha.", "language": "en", "topic_id": "india_parliament"}
+{"id": "fact60", "claim": "भारत में द्विसदनीय संसद है जिसमें लोकसभा और राज्यसभा शामिल हैं।", "language": "hi", "topic_id": "india_parliament"}
+{"id": "fact61", "claim": "The President of India is the constitutional head of state.", "language": "en", "topic_id": "india_president"}
+{"id": "fact62", "claim": "भारत के राष्ट्रपति संवैधानिक रूप से राज्य के प्रमुख हैं।", "language": "hi", "topic_id": "india_president"}
+{"id": "fact63", "claim": "Indian citizens have the right to vote from the age of 18.", "language": "en", "topic_id": "india_voting_age"}
+{"id": "fact64", "claim": "भारतीय नागरिकों को 18 वर्ष की आयु से मतदान का अधिकार है।", "language": "hi", "topic_id": "india_voting_age"}
+{"id": "fact65", "claim": "India shares land borders with Pakistan, China, Nepal, Bhutan, Bangladesh, and Myanmar.", "language": "en", "topic_id": "india_borders"}
+{"id": "fact66", "claim": "भारत की भूमि सीमाएँ पाकिस्तान, चीन, नेपाल, भूटान, बांग्लादेश और म्यांमार के साथ लगती हैं।", "language": "hi", "topic_id": "india_borders"}
+{"id": "fact67", "claim": "DNA (deoxyribonucleic acid) carries the genetic information of living organisms.", "language": "en", "topic_id": "dna_genetics"}
+{"id": "fact68", "claim": "डीएनए जीवों की आनुवंशिक जानकारी को वहन करता है।", "language": "hi", "topic_id": "dna_genetics"}
+{"id": "fact69", "claim": "The speed of light in vacuum is approximately 299,792,458 meters per second.", "language": "en", "topic_id": "speed_of_light"}
+{"id": "fact70", "claim": "निर्वात में प्रकाश की गति लगभग 29,97,92,458 मीटर प्रति सेकंड है।", "language": "hi", "topic_id": "speed_of_light"}
+{"id": "fact71", "claim": "India is a member of the G20 group of major world economies.", "language": "en", "topic_id": "india_g20"}
+{"id": "fact72", "claim": "भारत प्रमुख विश्व अर्थव्यवस्थाओं के समूह जी20 का सदस्य है।", "language": "hi", "topic_id": "india_g20"}
+{"id": "fact73", "claim": "The concept of zero was developed by ancient Indian mathematicians.", "language": "en", "topic_id": "zero_invention"}
+{"id": "fact74", "claim": "शून्य की अवधारणा प्राचीन भारतीय गणितज्ञों ने दी थी।", "language": "hi", "topic_id": "zero_invention"}
+{"id": "fact75", "claim": "The Indian rupee symbol was officially adopted by the Government of India in 2010.", "language": "en", "topic_id": "rupee_symbol"}
+{"id": "fact76", "claim": "भारतीय रुपये का प्रतीक भारत सरकार द्वारा 2010 में आधिकारिक रूप से अपनाया गया था।", "language": "hi", "topic_id": "rupee_symbol"}
+{"id": "fact77", "claim": "Digital India initiative was launched by the Indian government in 2015.", "language": "en", "topic_id": "digital_india"}
+{"id": "fact78", "claim": "डिजिटल इंडिया पहल भारत सरकार द्वारा 2015 में शुरू की गई थी।", "language": "hi", "topic_id": "digital_india"}
+{"id": "fact79", "claim": "IITs (Indian Institutes of Technology) are among India's most prestigious engineering institutions.", "language": "en", "topic_id": "iit_india"}
+{"id": "fact80", "claim": "आईआईटी भारत के सबसे प्रतिष्ठित इंजीनियरिंग संस्थानों में से एक हैं।", "language": "hi", "topic_id": "iit_india"}
+{"id": "fact81", "claim": "India's national emblem is the Lion Capital of Ashoka, adopted in 1950.", "language": "en", "topic_id": "india_national_emblem"}
+{"id": "fact82", "claim": "भारत का राष्ट्रीय प्रतीक अशोक की सिंह राजधानी है, जिसे 1950 में अपनाया गया था।", "language": "hi", "topic_id": "india_national_emblem"}
+{"id": "fact83", "claim": "Demonetization in India was announced on November 8, 2016.", "language": "en", "topic_id": "demonetization_date"}
+{"id": "fact84", "claim": "भारत में नोटबंदी की घोषणा 8 नवंबर 2016 को की गई थी।", "language": "hi", "topic_id": "demonetization_date"}
+{"id": "fact85", "claim": "The Jallianwala Bagh massacre took place on April 13, 1919, in Amritsar, Punjab.", "language": "en", "topic_id": "jallianwala_bagh"}
+{"id": "fact86", "claim": "जलियांवाला बाग हत्याकांड 13 अप्रैल 1919 को अमृतसर, पंजाब में हुआ था।", "language": "hi", "topic_id": "jallianwala_bagh"}
+{"id": "fact87", "claim": "The Quit India Movement was launched by Mahatma Gandhi in August 1942.", "language": "en", "topic_id": "quit_india_movement"}
+{"id": "fact88", "claim": "भारत छोड़ो आंदोलन महात्मा गांधी द्वारा अगस्त 1942 में शुरू किया गया था।", "language": "hi", "topic_id": "quit_india_movement"}
+{"id": "fact89", "claim": "India has a coastline of approximately 7,516 km.", "language": "en", "topic_id": "india_coastline"}
+{"id": "fact90", "claim": "भारत की तटरेखा लगभग 7,516 किलोमीटर है।", "language": "hi", "topic_id": "india_coastline"}
+{"id": "fact91", "claim": "The Thar Desert, also called the Great Indian Desert, is located primarily in Rajasthan.", "language": "en", "topic_id": "thar_desert"}
+{"id": "fact92", "claim": "थार मरुस्थल, जिसे महान भारतीय मरुस्थल भी कहते हैं, मुख्य रूप से राजस्थान में स्थित है।", "language": "hi", "topic_id": "thar_desert"}
+{"id": "fact93", "claim": "The Partition of India in 1947 led to the creation of India and Pakistan as separate nations.", "language": "en", "topic_id": "india_partition"}
+{"id": "fact94", "claim": "1947 के भारत विभाजन से भारत और पाकिस्तान दो स्वतंत्र राष्ट्रों का निर्माण हुआ।", "language": "hi", "topic_id": "india_partition"}
+{"id": "fact95", "claim": "Hindi is one of the two official languages of the Union Government of India, along with English.", "language": "en", "topic_id": "hindi_official_language"}
+{"id": "fact96", "claim": "हिंदी अंग्रेजी के साथ भारत सरकार की दो आधिकारिक भाषाओं में से एक है।", "language": "hi", "topic_id": "hindi_official_language"}
+{"id": "fact97", "claim": "India's Supreme Court is the apex judicial body and its decisions are binding on all lower courts.", "language": "en", "topic_id": "india_supreme_court"}
+{"id": "fact98", "claim": "भारत का सर्वोच्च न्यायालय सर्वोच्च न्यायिक निकाय है और इसके फैसले सभी अदालतों पर बाध्यकारी होते हैं।", "language": "hi", "topic_id": "india_supreme_court"}
+{"id": "fact99", "claim": "Mars is known as the Red Planet due to iron oxide on its surface.", "language": "en", "topic_id": "mars_red_planet"}
+{"id": "fact100", "claim": "मंगल ग्रह को लाल ग्रह कहा जाता है क्योंकि इसकी सतह पर आयरन ऑक्साइड है।", "language": "hi", "topic_id": "mars_red_planet"}
+{"id": "fact101", "claim": "Sachin Tendulkar is considered one of the greatest cricket batsmen of all time.", "language": "en", "topic_id": "sachin_tendulkar"}
+{"id": "fact102", "claim": "सचिन तेंदुलकर को सर्वकालिक महान क्रिकेट बल्लेबाजों में से एक माना जाता है।", "language": "hi", "topic_id": "sachin_tendulkar"}
+{"id": "fact103", "claim": "India's space agency ISRO was established in 1969.", "language": "en", "topic_id": "isro_founded"}
+{"id": "fact104", "claim": "भारत की अंतरिक्ष एजेंसी इसरो की स्थापना 1969 में हुई थी।", "language": "hi", "topic_id": "isro_founded"}
+{"id": "fact105", "claim": "The Indian National Congress was founded in 1885.", "language": "en", "topic_id": "inc_founded"}
+{"id": "fact106", "claim": "भारतीय राष्ट्रीय कांग्रेस की स्थापना 1885 में हुई थी।", "language": "hi", "topic_id": "inc_founded"}
+{"id": "fact107", "claim": "India's literacy rate was approximately 77% according to the 2021 census.", "language": "en", "topic_id": "india_literacy_rate"}
+{"id": "fact108", "claim": "2021 की जनगणना के अनुसार भारत की साक्षरता दर लगभग 77% थी।", "language": "hi", "topic_id": "india_literacy_rate"}
+{"id": "fact109", "claim": "The Brahmaputra river originates in the Tibetan plateau and flows through northeastern India.", "language": "en", "topic_id": "brahmaputra_river"}
+{"id": "fact110", "claim": "ब्रह्मपुत्र नदी तिब्बती पठार से उगती है और पूर्वोत्तर भारत से होकर बहती है।", "language": "hi", "topic_id": "brahmaputra_river"}
+{"id": "fact111", "claim": "India's national animal is the Bengal Tiger.", "language": "en", "topic_id": "india_national_animal"}
+{"id": "fact112", "claim": "भारत का राष्ट्रीय पशु बंगाल टाइगर है।", "language": "hi", "topic_id": "india_national_animal"}
+{"id": "fact113", "claim": "India's national bird is the Indian Peacock.", "language": "en", "topic_id": "india_national_bird"}
+{"id": "fact114", "claim": "भारत का राष्ट्रीय पक्षी भारतीय मोर है।", "language": "hi", "topic_id": "india_national_bird"}
+{"id": "fact115", "claim": "India's national flower is the Lotus.", "language": "en", "topic_id": "india_national_flower"}
+{"id": "fact116", "claim": "भारत का राष्ट्रीय फूल कमल है।", "language": "hi", "topic_id": "india_national_flower"}
+{"id": "fact117", "claim": "Regular physical exercise reduces the risk of cardiovascular diseases.", "language": "en", "topic_id": "exercise_heart_health"}
+{"id": "fact118", "claim": "नियमित शारीरिक व्यायाम हृदय रोगों के जोखिम को कम करता है।", "language": "hi", "topic_id": "exercise_heart_health"}
+{"id": "fact119", "claim": "Blood pressure above 140/90 mmHg is considered hypertension.", "language": "en", "topic_id": "hypertension_threshold"}
+{"id": "fact120", "claim": "140/90 mmHg से अधिक रक्तचाप को उच्च रक्तचाप माना जाता है।", "language": "hi", "topic_id": "hypertension_threshold"}
+{"id": "fact121", "claim": "Smoking is a leading cause of lung cancer and respiratory diseases.", "language": "en", "topic_id": "smoking_lung_cancer"}
+{"id": "fact122", "claim": "धूम्रपान फेफड़ों के कैंसर और सांस की बीमारियों का एक प्रमुख कारण है।", "language": "hi", "topic_id": "smoking_lung_cancer"}
+{"id": "fact123", "claim": "Clean drinking water is essential for preventing waterborne diseases like cholera and typhoid.", "language": "en", "topic_id": "clean_water_health"}
+{"id": "fact124", "claim": "हैजा और टाइफाइड जैसी जलजनित बीमारियों को रोकने के लिए स्वच्छ पेयजल आवश्यक है।", "language": "hi", "topic_id": "clean_water_health"}
+{"id": "fact125", "claim": "India's economy is one of the fastest growing major economies in the world.", "language": "en", "topic_id": "india_economy_growth"}
+{"id": "fact126", "claim": "भारत की अर्थव्यवस्था दुनिया की सबसे तेजी से बढ़ती प्रमुख अर्थव्यवस्थाओं में से एक है।", "language": "hi", "topic_id": "india_economy_growth"}
+{"id": "fact127", "claim": "Inflation in India is primarily measured by the Consumer Price Index (CPI).", "language": "en", "topic_id": "india_inflation_cpi"}
+{"id": "fact128", "claim": "भारत में मुद्रास्फीति मुख्य रूप से उपभोक्ता मूल्य सूचकांक (सीपीआई) द्वारा मापी जाती है।", "language": "hi", "topic_id": "india_inflation_cpi"}
+{"id": "fact129", "claim": "India's first general election after independence was held in 1951-52.", "language": "en", "topic_id": "india_first_election"}
+{"id": "fact130", "claim": "स्वतंत्रता के बाद भारत का पहला आम चुनाव 1951-52 में हुआ था।", "language": "hi", "topic_id": "india_first_election"}
+{"id": "fact131", "claim": "Sanskrit is one of the world's oldest languages with a documented history of over 3,000 years.", "language": "en", "topic_id": "sanskrit_ancient"}
+{"id": "fact132", "claim": "संस्कृत दुनिया की सबसे प्राचीन भाषाओं में से एक है जिसका दस्तावेजी इतिहास 3,000 वर्षों से अधिक पुराना है।", "language": "hi", "topic_id": "sanskrit_ancient"}
+{"id": "fact133", "claim": "India is the world's largest producer of milk.", "language": "en", "topic_id": "india_milk_production"}
+{"id": "fact134", "claim": "भारत दुनिया का सबसे बड़ा दूध उत्पादक देश है।", "language": "hi", "topic_id": "india_milk_production"}
+{"id": "fact135", "claim": "The Indian Army is one of the largest standing armies in the world.", "language": "en", "topic_id": "indian_army_size"}
+{"id": "fact136", "claim": "भारतीय सेना दुनिया की सबसे बड़ी स्थायी सेनाओं में से एक है।", "language": "hi", "topic_id": "indian_army_size"}
+{"id": "fact137", "claim": "The Bollywood film industry, based in Mumbai, is one of the world's largest film industries by output.", "language": "en", "topic_id": "bollywood"}
+{"id": "fact138", "claim": "मुंबई स्थित बॉलीवुड फिल्म उद्योग उत्पादन के हिसाब से दुनिया के सबसे बड़े फिल्म उद्योगों में से एक है।", "language": "hi", "topic_id": "bollywood"}
+{"id": "fact139", "claim": "Ayurveda is an ancient Indian system of traditional medicine with roots over 3,000 years old.", "language": "en", "topic_id": "ayurveda"}
+{"id": "fact140", "claim": "आयुर्वेद भारत की एक प्राचीन पारंपरिक चिकित्सा प्रणाली है जिसकी जड़ें 3,000 साल से अधिक पुरानी हैं।", "language": "hi", "topic_id": "ayurveda"}
+{"id": "fact141", "claim": "Hydrogen is the lightest and most abundant element in the universe.", "language": "en", "topic_id": "hydrogen_element"}
+{"id": "fact142", "claim": "हाइड्रोजन ब्रह्मांड में सबसे हल्का और सबसे प्रचुर तत्व है।", "language": "hi", "topic_id": "hydrogen_element"}
+{"id": "fact143", "claim": "The Indian Ocean is the third largest ocean in the world.", "language": "en", "topic_id": "indian_ocean"}
+{"id": "fact144", "claim": "हिंद महासागर दुनिया का तीसरा सबसे बड़ा महासागर है।", "language": "hi", "topic_id": "indian_ocean"}
+{"id": "fact145", "claim": "The Battle of Plassey in 1757 was a key turning point in the establishment of British rule in India.", "language": "en", "topic_id": "battle_of_plassey"}
+{"id": "fact146", "claim": "1757 में प्लासी की लड़ाई भारत में ब्रिटिश शासन की स्थापना में एक महत्वपूर्ण मोड़ था।", "language": "hi", "topic_id": "battle_of_plassey"}
+{"id": "fact147", "claim": "The Nifty 50 is a benchmark stock market index of the National Stock Exchange of India.", "language": "en", "topic_id": "nifty50"}
+{"id": "fact148", "claim": "निफ्टी 50 भारत के नेशनल स्टॉक एक्सचेंज का एक बेंचमार्क शेयर बाजार सूचकांक है।", "language": "hi", "topic_id": "nifty50"}
+{"id": "fact149", "claim": "India is one of the world's largest producers of rice and wheat.", "language": "en", "topic_id": "india_grain_production"}
+{"id": "fact150", "claim": "भारत चावल और गेहूं के दुनिया के सबसे बड़े उत्पादकों में से एक है।", "language": "hi", "topic_id": "india_grain_production"}
+{"id": "fact151", "claim": "The Rajya Sabha is the upper house of India's Parliament.", "language": "en", "topic_id": "rajya_sabha"}
+{"id": "fact152", "claim": "राज्य सभा भारत की संसद का उच्च सदन है।", "language": "hi", "topic_id": "rajya_sabha"}
+{"id": "fact153", "claim": "India's Aadhaar system is the world's largest biometric identification system.", "language": "en", "topic_id": "aadhaar_biometric"}
+{"id": "fact154", "claim": "भारत की आधार प्रणाली दुनिया की सबसे बड़ी बायोमेट्रिक पहचान प्रणाली है।", "language": "hi", "topic_id": "aadhaar_biometric"}
+{"id": "fact155", "claim": "Rabindranath Tagore was the first Asian to win the Nobel Prize in Literature in 1913.", "language": "en", "topic_id": "tagore_nobel"}
+{"id": "fact156", "claim": "रवींद्रनाथ टैगोर 1913 में नोबेल साहित्य पुरस्कार जीतने वाले पहले एशियाई थे।", "language": "hi", "topic_id": "tagore_nobel"}
+{"id": "fact157", "claim": "BrahMos is a supersonic cruise missile jointly developed by India and Russia.", "language": "en", "topic_id": "brahmos_missile"}
+{"id": "fact158", "claim": "ब्रह्मोस एक सुपरसोनिक क्रूज मिसाइल है जिसे भारत और रूस ने संयुक्त रूप से विकसित किया है।", "language": "hi", "topic_id": "brahmos_missile"}
+{"id": "fact159", "claim": "India's Election Commission conducts one of the world's largest democratic elections.", "language": "en", "topic_id": "india_election_commission"}
+{"id": "fact160", "claim": "भारत का चुनाव आयोग दुनिया के सबसे बड़े लोकतांत्रिक चुनावों में से एक का संचालन करता है।", "language": "hi", "topic_id": "india_election_commission"}
+{"id": "fact161", "claim": "Mt. Everest is the highest peak in the world at 8,848.86 meters above sea level.", "language": "en", "topic_id": "mount_everest"}
+{"id": "fact162", "claim": "माउंट एवरेस्ट समुद्र तल से 8,848.86 मीटर की ऊँचाई पर विश्व की सबसे ऊँची चोटी है।", "language": "hi", "topic_id": "mount_everest"}
+{"id": "fact163", "claim": "Diabetes mellitus is characterized by persistently elevated blood glucose levels.", "language": "en", "topic_id": "diabetes_blood_glucose"}
+{"id": "fact164", "claim": "मधुमेह मेलिटस की विशेषता लगातार उच्च रक्त शर्करा स्तर है।", "language": "hi", "topic_id": "diabetes_blood_glucose"}
+{"id": "fact165", "claim": "India's Pradhan Mantri Jan Dhan Yojana was launched in 2014 for financial inclusion.", "language": "en", "topic_id": "jan_dhan_yojana"}
+{"id": "fact166", "claim": "भारत की प्रधानमंत्री जन धन योजना वित्तीय समावेशन के लिए 2014 में शुरू की गई थी।", "language": "hi", "topic_id": "jan_dhan_yojana"}
+{"id": "fact167", "claim": "India has one of the world's three largest startup ecosystems, after the US and China.", "language": "en", "topic_id": "india_startup_ecosystem"}
+{"id": "fact168", "claim": "भारत अमेरिका और चीन के बाद दुनिया के तीन सबसे बड़े स्टार्टअप पारिस्थितिकी तंत्रों में से एक है।", "language": "hi", "topic_id": "india_startup_ecosystem"}
+{"id": "fact169", "claim": "The Indian national anthem Jana Gana Mana was written by Rabindranath Tagore.", "language": "en", "topic_id": "jana_gana_mana"}
+{"id": "fact170", "claim": "भारतीय राष्ट्रगान 'जन गण मन' रवींद्रनाथ टैगोर द्वारा लिखा गया था।", "language": "hi", "topic_id": "jana_gana_mana"}
+{"id": "fact171", "claim": "India plays a significant role in global IT services and software exports.", "language": "en", "topic_id": "india_it_exports"}
+{"id": "fact172", "claim": "भारत वैश्विक आईटी सेवाओं और सॉफ्टवेयर निर्यात में महत्वपूर्ण भूमिका निभाता है।", "language": "hi", "topic_id": "india_it_exports"}
+{"id": "fact173", "claim": "The Great Wall of China is not visible from space with the naked eye.", "language": "en", "topic_id": "great_wall_myth"}
+{"id": "fact174", "claim": "चीन की महान दीवार को नंगी आँखों से अंतरिक्ष से नहीं देखा जा सकता।", "language": "hi", "topic_id": "great_wall_myth"}
+{"id": "fact175", "claim": "MS Dhoni led India to win the 2011 ICC Cricket World Cup.", "language": "en", "topic_id": "dhoni_2011_worldcup"}
+{"id": "fact176", "claim": "एम.एस. धोनी ने भारत को 2011 आईसीसी क्रिकेट विश्व कप जिताया।", "language": "hi", "topic_id": "dhoni_2011_worldcup"}
+{"id": "fact177", "claim": "India has the second largest English-speaking population in the world.", "language": "en", "topic_id": "india_english_speakers"}
+{"id": "fact178", "claim": "भारत में दुनिया की दूसरी सबसे बड़ी अंग्रेजी बोलने वाली आबादी है।", "language": "hi", "topic_id": "india_english_speakers"}
+{"id": "fact179", "claim": "DRDO (Defence Research and Development Organisation) develops defence technologies for India.", "language": "en", "topic_id": "drdo_india"}
+{"id": "fact180", "claim": "डीआरडीओ भारत के लिए रक्षा तकनीकों का विकास करता है।", "language": "hi", "topic_id": "drdo_india"}
+{"id": "fact181", "claim": "Approximately 80% of India's population identifies as Hindu.", "language": "en", "topic_id": "india_hindu_population"}
+{"id": "fact182", "claim": "भारत की लगभग 80% जनसंख्या हिंदू धर्म से पहचान रखती है।", "language": "hi", "topic_id": "india_hindu_population"}
+{"id": "fact183", "claim": "India's Swachh Bharat Mission was launched in 2014 to improve sanitation across the country.", "language": "en", "topic_id": "swachh_bharat"}
+{"id": "fact184", "claim": "भारत का स्वच्छ भारत मिशन देश भर में स्वच्छता सुधार के लिए 2014 में शुरू किया गया था।", "language": "hi", "topic_id": "swachh_bharat"}
+{"id": "fact185", "claim": "The average human body temperature is approximately 37 degrees Celsius.", "language": "en", "topic_id": "human_body_temperature"}
+{"id": "fact186", "claim": "औसत मानव शरीर का तापमान लगभग 37 डिग्री सेल्सियस होता है।", "language": "hi", "topic_id": "human_body_temperature"}
+{"id": "fact187", "claim": "The Sun is about 150 million kilometers away from the Earth.", "language": "en", "topic_id": "sun_earth_distance"}
+{"id": "fact188", "claim": "सूर्य पृथ्वी से लगभग 15 करोड़ किलोमीटर दूर है।", "language": "hi", "topic_id": "sun_earth_distance"}
+{"id": "fact189", "claim": "India's National Education Policy 2020 introduced major reforms to the education system.", "language": "en", "topic_id": "nep_2020"}
+{"id": "fact190", "claim": "भारत की राष्ट्रीय शिक्षा नीति 2020 ने शिक्षा प्रणाली में बड़े सुधार किए।", "language": "hi", "topic_id": "nep_2020"}
+{"id": "fact191", "claim": "Wuhan, China was the initial epicenter of the COVID-19 pandemic in late 2019.", "language": "en", "topic_id": "covid19_origin"}
+{"id": "fact192", "claim": "चीन का वुहान शहर 2019 के अंत में कोविड-19 महामारी का प्रारंभिक केंद्र था।", "language": "hi", "topic_id": "covid19_origin"}
+{"id": "fact193", "claim": "The Paris Agreement is an international treaty on climate change, adopted in 2015.", "language": "en", "topic_id": "paris_agreement"}
+{"id": "fact194", "claim": "पेरिस समझौता 2015 में अपनाई गई जलवायु परिवर्तन पर एक अंतर्राष्ट्रीय संधि है।", "language": "hi", "topic_id": "paris_agreement"}
+{"id": "fact195", "claim": "India's Moon is called Chandrama in Hindi and is about 384,400 km from Earth.", "language": "en", "topic_id": "moon_distance"}
+{"id": "fact196", "claim": "चंद्रमा पृथ्वी का एकमात्र प्राकृतिक उपग्रह है और यह पृथ्वी से लगभग 3,84,400 किलोमीटर दूर है।", "language": "hi", "topic_id": "moon_distance"}
+{"id": "fact197", "claim": "India's Chandrayaan-1 mission, launched in 2008, discovered water molecules on the Moon.", "language": "en", "topic_id": "chandrayaan1_water"}
+{"id": "fact198", "claim": "2008 में लॉन्च किए गए इसरो के चंद्रयान-1 मिशन ने चंद्रमा पर जल अणुओं की खोज की।", "language": "hi", "topic_id": "chandrayaan1_water"}
+{"id": "fact199", "claim": "India has the world's largest film industry by number of films produced annually.", "language": "en", "topic_id": "india_film_industry"}
+{"id": "fact200", "claim": "भारत में प्रति वर्ष सबसे अधिक फिल्मों के निर्माण के हिसाब से दुनिया का सबसे बड़ा फिल्म उद्योग है।", "language": "hi", "topic_id": "india_film_industry"}
+{"id": "fact9", "claim": "India became independent from British rule on August 15, 1947.", "language": "en"}
+{"id": "fact10", "claim": "भारतीय संविधान 26 जनवरी 1950 को लागू हुआ था।", "language": "hi"}
+{"id": "fact11", "claim": "Water boils at 100 degrees Celsius at sea level.", "language": "en"}
+{"id": "fact12", "claim": "समुद्र तल पर पानी 100 डिग्री सेल्सियस पर उबलता है।", "language": "hi"}
+{"id": "fact13", "claim": "Humans have 206 bones in an adult body.", "language": "en"}
+{"id": "fact14", "claim": "वयस्क मानव शरीर में 206 हड्डियाँ होती हैं।", "language": "hi"}
+{"id": "fact15", "claim": "Light travels at approximately 299,792 kilometers per second.", "language": "en"}
+{"id": "fact16", "claim": "प्रकाश की गति लगभग 299,792 किलोमीटर प्रति सेकंड होती है।", "language": "hi"}
+{"id": "fact17", "claim": "The Great Wall of China is visible from space with aid, but not to the naked eye.", "language": "en"}
+{"id": "fact18", "claim": "चाँद पर पृथ्वी का गुरुत्वाकर्षण दसवीं हिस्से जैसा होता है।", "language": "hi"}
+{"id": "fact19", "claim": "Vitamins are organic compounds essential for normal growth and nutrition.", "language": "en"}
+{"id": "fact20", "claim": "विटामिन ऐसे कार्बनिक यौगिक हैं जो सामान्य वृद्धि और पोषण के लिए अनिवार्य हैं।", "language": "hi"}
+{"id": "fact21", "claim": "Mount Everest is the highest mountain above sea level on Earth.", "language": "en"}
+{"id": "fact22", "claim": "माउंट एवरेस्ट पृथ्वी पर समुद्र तल से सबसे ऊँचा पर्वत है।", "language": "hi"}
+{"id": "fact23", "claim": "The speed of sound in air at room temperature is about 343 m/s.", "language": "en"}
+{"id": "fact24", "claim": "कमरा तापमान पर ध्वनि की गति लगभग 343 मीटर प्रति सेकंड होती है।", "language": "hi"}
+{"id": "fact25", "claim": "The Sahara Desert is the largest hot desert in the world.", "language": "en"}
+{"id": "fact26", "claim": "सहारा रेगिस्तान दुनिया का सबसे बड़ा गरम रेगिस्तान है।", "language": "hi"}
+{"id": "fact27", "claim": "The Pacific Ocean is the largest ocean on Earth.", "language": "en"}
+{"id": "fact28", "claim": "प्रशांत महासागर पृथ्वी का सबसे बड़ा महासागर है।", "language": "hi"}
+{"id": "fact29", "claim": "The human heart has four chambers.", "language": "en"}
+{"id": "fact30", "claim": "मानव हृदय में चार चेंबर होते हैं।", "language": "hi"}
+{"id": "fact31", "claim": "The Amazon rainforest is the largest tropical rainforest.", "language": "en"}
+{"id": "fact32", "claim": "अमेज़न वर्षावन दुनिया का सबसे बड़ा उष्णकटिबंधीय वर्षावन है।", "language": "hi"}
+{"id": "fact33", "claim": "Mercury is the closest planet to the Sun.", "language": "en"}
+{"id": "fact34", "claim": "बृहस्पति सौर मंडल का सबसे बड़ा ग्रह है।", "language": "hi"}
+{"id": "fact35", "claim": "The tallest animal on Earth is the giraffe.", "language": "en"}
+{"id": "fact36", "claim": "पृथ्वी पर सबसे लंबा जानवर जिराफ़ है।", "language": "hi"}
+{"id": "fact37", "claim": "The Moon orbits the Earth approximately once every 27.3 days.", "language": "en"}
+{"id": "fact38", "claim": "चंद्रमा लगभग हर 27.3 दिनों में पृथ्वी का एक चक्र पूरा करता है।", "language": "hi"}
+{"id": "fact39", "claim": "India has 28 states and 8 union territories.", "language": "en"}
+{"id": "fact40", "claim": "भारत में 28 राज्य और 8 केन्द्र शासित क्षेत्र हैं।", "language": "hi"}
+{"id": "fact41", "claim": "The boiling point of ethanol is 78.37 degrees Celsius.", "language": "en"}
+{"id": "fact42", "claim": "एथेनॉल का उबलने का तापमान 78.37 डिग्री सेल्सियस है।", "language": "hi"}
+{"id": "fact43", "claim": "The currency of Japan is the Japanese Yen.", "language": "en"}
+{"id": "fact44", "claim": "जापान की मुद्रा जापानी येन है।", "language": "hi"}
+{"id": "fact45", "claim": "The SI unit of electric current is the ampere.", "language": "en"}
+{"id": "fact46", "claim": "विद्युत धारा की SI इकाई ampere है।", "language": "hi"}
+{"id": "fact47", "claim": "Shakespeare was an English playwright and poet.", "language": "en"}
+{"id": "fact48", "claim": "शेक्सपियर एक अंग्रेज़ नाटककार और कवि थे।", "language": "hi"}
+{"id": "fact49", "claim": "The capital of Japan is Tokyo.", "language": "en"}
+{"id": "fact50", "claim": "जापान की राजधानी टोक्यो है।", "language": "hi"}
+{"id": "fact51", "claim": "Vaccines help the immune system develop protection against diseases.", "language": "en"}
+{"id": "fact52", "claim": "टीके रोगों के खिलाफ प्रतिरक्षा प्रणाली को सुरक्षा विकसित करने में मदद करते हैं।", "language": "hi"}
+{"id": "fact53", "claim": "The Amazon River is the longest river by discharge volume.", "language": "en"}
+{"id": "fact54", "claim": "Amazon नदी discharge मात्रा के हिसाब से सबसे लंबी नदी है।", "language": "hi"}
+{"id": "fact55", "claim": "A leap year has 366 days.", "language": "en"}
+{"id": "fact56", "claim": "एक लिप वर्ष में 366 दिन होते हैं।", "language": "hi"}
+{"id": "fact57", "claim": "Sound requires a medium to travel.", "language": "en"}
+{"id": "fact58", "claim": "ध्वनि को यात्रा करने के लिए माध्यम की आवश्यकता होती है।", "language": "hi"}
+{"id": "fact59", "claim": "The largest internal organ in the human body is the liver.", "language": "en"}
+{"id": "fact60", "claim": "मानव शरीर का सबसे बड़ा आंतरिक अंग यकृत है।", "language": "hi"}
+{"id": "fact61", "claim": "The Sun is a star located at the center of the Solar System.", "language": "en"}
+{"id": "fact62", "claim": "सौर मंडल का केंद्र सूर्य है।", "language": "hi"}
+{"id": "fact63", "claim": "India's national bird is the peacock.", "language": "en"}
+{"id": "fact64", "claim": "भारत का राष्ट्रीय पक्षी मोर है।", "language": "hi"}
+{"id": "fact65", "claim": "The human body has five senses: sight, hearing, taste, touch, and smell.", "language": "en"}
+{"id": "fact66", "claim": "मानव शरीर में पाँच इन्द्रियाँ होती हैं: दृष्टि, श्रवण, स्वाद, स्पर्श और गंध।", "language": "hi"}
+{"id": "fact67", "claim": "The Nile is the longest river in Africa.", "language": "en"}
+{"id": "fact68", "claim": "नील नदी अफ्रीका की सबसे लंबी नदी है।", "language": "hi"}
+{"id": "fact69", "claim": "Albert Einstein developed the theory of relativity.", "language": "en"}
+{"id": "fact70", "claim": "अल्बर्ट आइंस्टीन ने सापेक्षता का सिद्धांत विकसित किया।", "language": "hi"}
+{"id": "fact71", "claim": "The Taj Mahal is located in Agra, India.", "language": "en"}
+{"id": "fact72", "claim": "ताज महल भारत के आगरा में स्थित है।", "language": "hi"}
+{"id": "fact73", "claim": "The Indian national flag has three colors: saffron, white, and green.", "language": "en"}
+{"id": "fact74", "claim": "भारतीय राष्ट्रीय ध्वज में तीन रंग हैं: केसरिया, सफेद और हरा।", "language": "hi"}
+{"id": "fact75", "claim": "The average human body temperature is around 37 degrees Celsius.", "language": "en"}
+{"id": "fact76", "claim": "मानव शरीर का औसत तापमान लगभग 37 डिग्री सेल्सियस होता है।", "language": "hi"}
+{"id": "fact77", "claim": "Python is a popular programming language.", "language": "en"}
+{"id": "fact78", "claim": "पायथन एक लोकप्रिय प्रोग्रामिंग भाषा है।", "language": "hi"}
+{"id": "fact79", "claim": "The Indian national animal is the Bengal tiger.", "language": "en"}
+{"id": "fact80", "claim": "भारत का राष्ट्रीय पशु बंगाल टाइगर है।", "language": "hi"}
+{"id": "fact81", "claim": "The Amazon rainforest produces around 20% of the world’s oxygen.", "language": "en"}
+{"id": "fact82", "claim": "अमेज़न वर्षावन विश्व के लगभग 20% ऑक्सीजन का उत्पादन करता है।", "language": "hi"}
+{"id": "fact83", "claim": "The human brain weighs approximately 1.4 kilograms.", "language": "en"}
+{"id": "fact84", "claim": "मानव मस्तिष्क का वजन लगभग 1.4 किलोग्राम होता है।", "language": "hi"}
+{"id": "fact85", "claim": "Mount Kilimanjaro is the highest mountain in Africa.", "language": "en"}
+{"id": "fact86", "claim": "माउंट किलिमंजारो अफ्रीका का सबसे ऊँचा पर्वत है।", "language": "hi"}
+{"id": "fact87", "claim": "The first man to walk on the Moon was Neil Armstrong in 1969.", "language": "en"}
+{"id": "fact88", "claim": "चाँद पर पहला व्यक्ति 1969 में नील आर्मस्ट्रांग था।", "language": "hi"}
+{"id": "fact89", "claim": "Water covers around 71% of the Earth's surface.", "language": "en"}
+{"id": "fact90", "claim": "पृथ्वी की सतह का लगभग 71% हिस्सा पानी से ढका है।", "language": "hi"}
+{"id": "fact91", "claim": "The Indian Parliament consists of two houses: Lok Sabha and Rajya Sabha.", "language": "en"}
+{"id": "fact92", "claim": "भारतीय संसद में दो सदन हैं: लोक सभा और राज्य सभा।", "language": "hi"}
+{"id": "fact93", "claim": "The Pacific Ocean is the largest ocean on Earth.", "language": "en"}
+{"id": "fact94", "claim": "प्रशांत महासागर पृथ्वी का सबसे बड़ा महासागर है।", "language": "hi"}
+{"id": "fact95", "claim": "The speed of light is approximately 299,792 kilometers per second.", "language": "en"}
+{"id": "fact96", "claim": "प्रकाश की गति लगभग 299,792 किलोमीटर प्रति सेकंड होती है।", "language": "hi"}
+{"id": "fact97", "claim": "The Statue of Liberty is located in New York Harbor, USA.", "language": "en"}
+{"id": "fact98", "claim": "स्टैचू ऑफ़ लिबर्टी न्यूयॉर्क हार्बर, अमेरिका में स्थित है।", "language": "hi"}
+{"id": "fact99", "claim": "The human eye can distinguish about 10 million different colors.", "language": "en"}
+{"id": "fact100", "claim": "मानव आंख लगभग 10 मिलियन अलग-अलग रंग पहचान सकती है।", "language": "hi"}
+{"id": "fact101", "claim": "India’s Prime Minister as of 2026 is Narendra Modi.", "language": "en"}
+{"id": "fact102", "claim": "2026 के अनुसार भारत के प्रधानमंत्री नरेंद्र मोदी हैं।", "language": "hi"}
+{"id": "fact103", "claim": "The first President of India was Dr. Rajendra Prasad.", "language": "en"}
+{"id": "fact104", "claim": "भारत के पहले राष्ट्रपति डॉ. राजेंद्र प्रसाद थे।", "language": "hi"}
+{"id": "fact105", "claim": "The Earth has one natural satellite, the Moon.", "language": "en"}
+{"id": "fact106", "claim": "पृथ्वी का एक प्राकृतिक उपग्रह है, चंद्रमा।", "language": "hi"}
+{"id": "fact107", "claim": "Lightning is a sudden electrostatic discharge during a thunderstorm.", "language": "en"}
+{"id": "fact108", "claim": "बिजली आंधी के दौरान अचानक इलेक्ट्रोस्टैटिक डिस्चार्ज है।", "language": "hi"}
+{"id": "fact109", "claim": "The Andromeda Galaxy is the nearest spiral galaxy to the Milky Way.", "language": "en"}
+{"id": "fact110", "claim": "एंड्रोमेडा गैलेक्सी मिल्की वे के सबसे नजदीकी सर्पिल आकाशगंगा है।", "language": "hi"}
+{"id": "fact111", "claim": "India’s currency is the Indian Rupee.", "language": "en"}
+{"id": "fact112", "claim": "भारत की मुद्रा भारतीय रुपया है।", "language": "hi"}
+{"id": "fact113", "claim": "The first Indian satellite was Aryabhata, launched in 1975.", "language": "en"}
+{"id": "fact114", "claim": "पहला भारतीय उपग्रह आर्यभट्ट 1975 में लॉन्च किया गया था।", "language": "hi"}
+{"id": "fact115", "claim": "Diabetes is a chronic disease that affects blood sugar levels.", "language": "en"}
+{"id": "fact116", "claim": "मधुमेह एक दीर्घकालिक रोग है जो रक्त शर्करा के स्तर को प्रभावित करता है।", "language": "hi"}
+{"id": "fact117", "claim": "The largest planet in the Solar System is Jupiter.", "language": "en"}
+{"id": "fact118", "claim": "सौर मंडल का सबसे बड़ा ग्रह बृहस्पति है।", "language": "hi"}
+{"id": "fact119", "claim": "The Indian national fruit is the mango.", "language": "en"}
+{"id": "fact120", "claim": "भारत का राष्ट्रीय फल आम है।", "language": "hi"}
+{"id": "fact121", "claim": "The equator is an imaginary line that divides the Earth into Northern and Southern Hemispheres.", "language": "en"}
+{"id": "fact122", "claim": "भूमध्य रेखा एक काल्पनिक रेखा है जो पृथ्वी को उत्तरी और दक्षिणी गोलार्ध में विभाजित करती है।", "language": "hi"}
+{"id": "fact123", "claim": "India’s national flower is the lotus.", "language": "en"}
+{"id": "fact124", "claim": "भारत का राष्ट्रीय फूल कमल है।", "language": "hi"}
+{"id": "fact125", "claim": "The first human to travel into space was Yuri Gagarin in 1961.", "language": "en"}
+{"id": "fact126", "claim": "पहला मानव जिसने 1961 में अंतरिक्ष की यात्रा की, वह यूरी गगारिन था।", "language": "hi"}
+{"id": "fact127", "claim": "The chemical formula of water is H2O.", "language": "en"}
+{"id": "fact128", "claim": "पानी का रासायनिक सूत्र H2O है।", "language": "hi"}
+{"id": "fact129", "claim": "India has 29 states and 8 union territories as of 2026.", "language": "en"}
+{"id": "fact130", "claim": "2026 के अनुसार भारत में 29 राज्य और 8 केंद्र शासित प्रदेश हैं।", "language": "hi"}
+{"id": "fact131", "claim": "The largest continent on Earth is Asia.", "language": "en"}
+{"id": "fact132", "claim": "पृथ्वी का सबसे बड़ा महाद्वीप एशिया है।", "language": "hi"}
+{"id": "fact133", "claim": "The chemical symbol for gold is Au.", "language": "en"}
+{"id": "fact134", "claim": "सोने का रासायनिक प्रतीक Au है।", "language": "hi"}
+{"id": "fact135", "claim": "The human skeleton gives structure and support to the body.", "language": "en"}
+{"id": "fact136", "claim": "मानव कंकाल शरीर को संरचना और समर्थन देता है।", "language": "hi"}
+{"id": "fact137", "claim": "India’s national sport is field hockey.", "language": "en"}
+{"id": "fact138", "claim": "भारत का राष्ट्रीय खेल हॉकी है।", "language": "hi"}
+{"id": "fact139", "claim": "The International Space Station orbits Earth approximately every 90 minutes.", "language": "en"}
+{"id": "fact140", "claim": "अंतर्राष्ट्रीय अंतरिक्ष स्टेशन लगभग हर 90 मिनट में पृथ्वी की परिक्रमा करता है।", "language": "hi"}
+{"id": "fact141", "claim": "Vaccines undergo multiple phases of clinical trials before approval.", "language": "en"}
+{"id": "fact142", "claim": "टीकों को अनुमोदन से पहले कई चरणों की क्लिनिकल ट्रायल से गुजरना पड़ता है।", "language": "hi"}
+{"id": "fact143", "claim": "India’s national currency symbol is ₹ (Indian Rupee).", "language": "en"}
+{"id": "fact144", "claim": "भारत का राष्ट्रीय मुद्रा प्रतीक ₹ (भारतीय रुपया) है।", "language": "hi"}
+{"id": "fact145", "claim": "The Milky Way Galaxy contains billions of stars.", "language": "en"}
+{"id": "fact146", "claim": "मिल्की वे आकाशगंगा में अरबों तारे हैं।", "language": "hi"}
+{"id": "fact147", "claim": "Lightning is caused by the discharge of static electricity in clouds.", "language": "en"}
+{"id": "fact148", "claim": "बिजली बादलों में स्थैतिक विद्युत के डिस्चार्ज से होती है।", "language": "hi"}
+{"id": "fact149", "claim": "Earth revolves around the Sun once every 365.25 days.", "language": "en"}
+{"id": "fact150", "claim": "पृथ्वी सूर्य के चारों ओर हर 365.25 दिनों में परिक्रमा करती है।", "language": "hi"}
+{"id": "fact151", "claim": "The chemical symbol for oxygen is O.", "language": "en"}
+{"id": "fact152", "claim": "ऑक्सीजन का रासायनिक प्रतीक O है।", "language": "hi"}
+{"id": "fact153", "claim": "The Great Barrier Reef is the world’s largest coral reef system.", "language": "en"}
+{"id": "fact154", "claim": "ग्रेट बैरियर रीफ दुनिया की सबसे बड़ी कोरल रीफ प्रणाली है।", "language": "hi"}
+{"id": "fact155", "claim": "India’s Independence Day is celebrated on August 15 every year.", "language": "en"}
+{"id": "fact156", "claim": "भारत का स्वतंत्रता दिवस हर साल 15 अगस्त को मनाया जाता है।", "language": "hi"}
+{"id": "fact157", "claim": "The first man-made satellite was Sputnik 1, launched by the Soviet Union in 1957.", "language": "en"}
+{"id": "fact158", "claim": "पहला मानव निर्मित उपग्रह स्पुतनिक 1 था, जिसे सोवियत संघ ने 1957 में लॉन्च किया।", "language": "hi"}
+{"id": "fact159", "claim": "The speed of sound in water is approximately 1,480 meters per second.", "language": "en"}
+{"id": "fact160", "claim": "पानी में ध्वनि की गति लगभग 1,480 मीटर प्रति सेकंड होती है।", "language": "hi"}
+{"id": "fact161", "claim": "India’s national song is 'Vande Mataram'.", "language": "en"}
+{"id": "fact162", "claim": "भारत का राष्ट्रीय गीत 'वन्दे मातरम्' है।", "language": "hi"}
+{"id": "fact163", "claim": "The Earth is approximately 4.54 billion years old.", "language": "en"}
+{"id": "fact164", "claim": "पृथ्वी की आयु लगभग 4.54 अरब वर्ष है।", "language": "hi"}
+{"id": "fact165", "claim": "The Andaman and Nicobar Islands are a union territory of India.", "language": "en"}
+{"id": "fact166", "claim": "अंडमान और निकोबार द्वीप समूह भारत का केंद्र शासित प्रदेश है।", "language": "hi"}
+{"id": "fact167", "claim": "The Richter scale measures the magnitude of earthquakes.", "language": "en"}
+{"id": "fact168", "claim": "रिच्टर पैमाना भूकंप की तीव्रता को मापता है।", "language": "hi"}
+{"id": "fact169", "claim": "India is the seventh largest country by land area.", "language": "en"}
+{"id": "fact170", "claim": "भौगोलिक क्षेत्रफल के हिसाब से भारत सातवां सबसे बड़ा देश है।", "language": "hi"}
+{"id": "fact171", "claim": "The Taj Mahal is made primarily of white marble.", "language": "en"}
+{"id": "fact172", "claim": "ताज महल मुख्य रूप से सफेद संगमरमर से बना है।", "language": "hi"}
+{"id": "fact173", "claim": "The largest desert in the world is the Sahara Desert.", "language": "en"}
+{"id": "fact174", "claim": "दुनिया का सबसे बड़ा रेगिस्तान सहारा है।", "language": "hi"}
+{"id": "fact175", "claim": "The ozone layer protects Earth from harmful ultraviolet radiation.", "language": "en"}
+{"id": "fact176", "claim": "ओज़ोन परत पृथ्वी को हानिकारक पराबैंगनी विकिरण से बचाती है।", "language": "hi"}
+{"id": "fact177", "claim": "The capital of Australia is Canberra.", "language": "en"}
+{"id": "fact178", "claim": "ऑस्ट्रेलिया की राजधानी कैनबरा है।", "language": "hi"}
+{"id": "fact179", "claim": "India has the second largest population in the world after China.", "language": "en"}
+{"id": "fact180", "claim": "भारत की जनसंख्या दुनिया में चीन के बाद दूसरी सबसे बड़ी है।", "language": "hi"}
+{"id": "fact181", "claim": "The chemical symbol for iron is Fe.", "language": "en"}
+{"id": "fact182", "claim": "लौह का रासायनिक प्रतीक Fe है।", "language": "hi"}
+{"id": "fact183", "claim": "The Amazon River is the second longest river in the world.", "language": "en"}
+{"id": "fact184", "claim": "अमेज़न नदी दुनिया की दूसरी सबसे लंबी नदी है।", "language": "hi"}
+{"id": "fact185", "claim": "The largest volcano in the world is Mauna Loa in Hawaii.", "language": "en"}
+{"id": "fact186", "claim": "दुनिया का सबसे बड़ा ज्वालामुखी हवाई का मौना लोआ है।", "language": "hi"}
+{"id": "fact187", "claim": "The chemical symbol for sodium is Na.", "language": "en"}
+{"id": "fact188", "claim": "सोडियम का रासायनिक प्रतीक Na है।", "language": "hi"}
+{"id": "fact189", "claim": "India’s Independence was achieved in 1947 after a nonviolent struggle.", "language": "en"}
+{"id": "fact190", "claim": "भारत ने 1947 में अहिंसात्मक संघर्ष के बाद स्वतंत्रता प्राप्त की।", "language": "hi"}
+{"id": "fact191", "claim": "Venus is the second planet from the Sun.", "language": "en"}
+{"id": "fact192", "claim": "सूर्य से दूसरा ग्रह शुक्र है।", "language": "hi"}
+{"id": "fact193", "claim": "The first Nobel Prize was awarded in 1901.", "language": "en"}
+{"id": "fact194", "claim": "पहला नोबेल पुरस्कार 1901 में दिया गया था।", "language": "hi"}
+{"id": "fact195", "claim": "The chemical symbol for carbon is C.", "language": "en"}
+{"id": "fact196", "claim": "कार्बन का रासायनिक प्रतीक C है।", "language": "hi"}
+{"id": "fact197", "claim": "The Eiffel Tower is located in Paris, France.", "language": "en"}
+{"id": "fact198", "claim": "एफिल टॉवर पेरिस, फ्रांस में स्थित है।", "language": "hi"}
+{"id": "fact199", "claim": "India is located in South Asia.", "language": "en"}
+{"id": "fact200", "claim": "भारत दक्षिण एशिया में स्थित है।", "language": "hi"}
