@@ -22,6 +22,7 @@ interface SearchBarProps {
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch, onLoadingChange, onError }) => {
   const [query, setQuery] = React.useState("");
+  const REQUEST_TIMEOUT_MS = 90000;
 
   const runVerification = async () => {
     const text = query.trim();
@@ -32,6 +33,8 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch, onLoadingChange, onErro
 
     onError?.(null);
     onLoadingChange?.(true);
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
 
     try {
       const response = await fetch("/verify", {
@@ -40,6 +43,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch, onLoadingChange, onErro
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ text }),
+        signal: controller.signal,
       });
 
       if (!response.ok) {
@@ -61,9 +65,14 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch, onLoadingChange, onErro
         sources: normalizedSources,
       });
       setQuery("");
-    } catch {
-      onError?.("Could not verify the claim. Please try again.");
+    } catch (error) {
+      if (error instanceof DOMException && error.name === "AbortError") {
+        onError?.("Verification timed out. First request can be slower while models warm up. Please try again.");
+      } else {
+        onError?.("Could not verify the claim. Please try again.");
+      }
     } finally {
+      clearTimeout(timeout);
       onLoadingChange?.(false);
     }
   };

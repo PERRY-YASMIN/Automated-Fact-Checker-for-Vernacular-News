@@ -1,0 +1,5 @@
+{
+  "model_type": "tfidf_logreg",
+  "samples": 784,
+  "features": 2949
+}
