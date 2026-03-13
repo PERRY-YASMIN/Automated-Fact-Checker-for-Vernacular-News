@@ -1,4 +1,4 @@
-# Vernacular Fact-Checker
+# Automated-Fact-Checker-for-Vernacular-News
 
 ## 1. Project Overview
 
